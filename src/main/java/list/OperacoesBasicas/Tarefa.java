@@ -14,7 +14,7 @@ public class Tarefa {
         return this.descricao;
     }
 
-    //Método que converte para String
+    //Método que converte para String a descrição ao invés de mostrar o endereço de memória da descrição
     @Override
     public String toString() {
         return descricao;
