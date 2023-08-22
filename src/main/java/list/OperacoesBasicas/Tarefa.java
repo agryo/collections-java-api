@@ -4,7 +4,7 @@ public class Tarefa {
     //Atributo da classe
     private String descricao;
     
-    //Método construtor
+    //Método construtor do objeto Tarefa
     public Tarefa(String descricao) {
         this.descricao = descricao;
     }
