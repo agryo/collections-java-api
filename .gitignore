@@ -1,4 +1,5 @@
-### BIN ###
+### GITIGNORE ###
 bin/
 lib/
+### VS Code ###
 .vscode/
