@@ -12,5 +12,19 @@ public class Main {
 
         System.out.println(ordenacaoPessoa.ordenarIdade());
         System.out.println(ordenacaoPessoa.ordenarAltura());
+
+        System.out.println("Agora testes da segunda lista de métodos");
+        OrdenacaoNumeros ordenacaoNumeros = new OrdenacaoNumeros();
+        ordenacaoNumeros.adicionarNumero(15);
+        ordenacaoNumeros.adicionarNumero(5);
+        ordenacaoNumeros.adicionarNumero(51);
+        ordenacaoNumeros.adicionarNumero(16);
+        ordenacaoNumeros.adicionarNumero(20);
+        ordenacaoNumeros.adicionarNumero(38);
+
+        ordenacaoNumeros.exibirNumeros();
+
+        System.out.println(ordenacaoNumeros.ordenarAscendente());
+        System.out.println(ordenacaoNumeros.ordenarDescendente());
     }
 }
