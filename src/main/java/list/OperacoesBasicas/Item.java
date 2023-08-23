@@ -1,17 +1,19 @@
 package main.java.list.OperacoesBasicas;
 
 public class Item {
-  //atributos
+	//Atributos
 	private String nome;
 	private double preco;
 	private int quant;
 
+	//Construtor
 	public Item(String nome, double preco, int quant) {
 		this.nome = nome;
 		this.preco = preco;
 		this.quant = quant;
 	}
 
+	//Getters
 	public String getNome() {
 		return nome;
 	}
@@ -24,9 +26,10 @@ public class Item {
 		return quant;
 	}
 
+	//Conversão para String
 	@Override
 	public String toString() {
-		return "Item{" +
+		return "\nItem {" +
 				"nome='" + nome + '\'' +
 				", preco=" + preco +
 				", quant=" + quant +
