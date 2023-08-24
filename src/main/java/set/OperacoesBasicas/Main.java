@@ -17,5 +17,23 @@ public class Main {
         System.out.println("Existem " + conjuntoConvidados.contarConvidados() + " convidado(s) dentro do Set de Convidados.");
 
         conjuntoConvidados.exibirConvidados();
+
+        System.out.println("Testes da segunda tarefa de desafio");
+        ConjuntoPalavrasUnicas conjuntoPalavrasUnicas = new ConjuntoPalavrasUnicas();
+
+        conjuntoPalavrasUnicas.adicionarPalavra("Palavra 1");
+        conjuntoPalavrasUnicas.adicionarPalavra("Palavra 1");
+        conjuntoPalavrasUnicas.adicionarPalavra("Palavra 3");
+        conjuntoPalavrasUnicas.adicionarPalavra("Palavra 4");
+        conjuntoPalavrasUnicas.adicionarPalavra("Palavra 2");
+        conjuntoPalavrasUnicas.exibirPalavrasUnicas();
+
+        conjuntoPalavrasUnicas.removerPalavra("Palavra 2");
+        conjuntoPalavrasUnicas.exibirPalavrasUnicas();
+
+        conjuntoPalavrasUnicas.removerPalavra("Palavra 5");
+        System.out.println(conjuntoPalavrasUnicas.verificarPalavra("Palavra 2"));
+
+        conjuntoPalavrasUnicas.exibirPalavrasUnicas();
     }
 }
