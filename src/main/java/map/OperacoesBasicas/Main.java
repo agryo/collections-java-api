@@ -19,5 +19,26 @@ public class Main {
         agendaContatos.exibirContatos();
 
         System.out.println("O número é: " + agendaContatos.pesquisarPorNome("Agryo Araujo"));
+
+        System.out.println("Testes dos métodos da segunda tarefa desafio");
+        Dicionario dicionario = new Dicionario();
+
+        // Adicionar palavras
+        dicionario.adicionarPalavra("maçã", "Fruta comestível de polpa suculenta e sabor doce.");
+        dicionario.adicionarPalavra("casa", "Lugar onde alguém mora.");
+    
+        // Exibir todas as palavras
+        dicionario.exibirPalavras();
+    
+        // Pesquisar uma palavra
+        String definicaoMaca = dicionario.pesquisarPorPalavra("maçã");
+        System.out.println("Definição da palavra 'maçã': " + definicaoMaca);
+        String definicaoUva = dicionario.pesquisarPorPalavra("uva");
+        System.out.println("Definição da palavra 'uva': " + definicaoUva);
+    
+        // Remover uma palavra
+        dicionario.removerPalavra("casa");
+        System.out.println("Após remover a palavra 'casa':");
+        dicionario.exibirPalavras();
     }
 }
