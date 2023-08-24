@@ -26,7 +26,7 @@ public class ConjuntoPalavrasUnicas {
         }
     }
 
-    //Método verificar palavra
+    //Método verificar se contem a palavra
     public boolean verificarPalavra(String palavra) {
         return palavrasUnicasSet.contains(palavra);
     }
