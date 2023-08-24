@@ -18,5 +18,30 @@ public class Main {
 
         System.out.println("Contato atualizado: " + agendaContatos.atualizarNumeroContato("Karleanderson", 88992211));
         agendaContatos.exibirContatos();
+
+        System.out.println("Segunda lista de exercicios, desafio");
+        ListaTarefas listaTarefas = new ListaTarefas();
+
+        listaTarefas.adicionarTarefa(new Tarefa("Tarefa 1", false));
+        listaTarefas.adicionarTarefa(new Tarefa("Tarefa 2", false));
+        listaTarefas.adicionarTarefa(new Tarefa("Tarefa 3", false));
+        listaTarefas.adicionarTarefa(new Tarefa("Tarefa 4", false));
+        listaTarefas.exibirTarefas();
+
+        listaTarefas.removerTarefa("Tarefa 55");
+        listaTarefas.exibirTarefas();
+
+        System.out.println("Existem " + listaTarefas.contarTarefas() + " na lista de tarefas.");
+
+        System.out.println(listaTarefas.obterTarefasConcluidas());
+
+        System.out.println(listaTarefas.obterTarefasPendentes());
+
+        listaTarefas.marcarTarefaConcluida("Tarefa 2");
+        listaTarefas.marcarTarefaConcluida("Tarefa 1");
+        listaTarefas.exibirTarefas();
+        System.out.println(listaTarefas.obterTarefasConcluidas());
+        listaTarefas.limparListaTarefas();
+        listaTarefas.exibirTarefas();
     }
 }
