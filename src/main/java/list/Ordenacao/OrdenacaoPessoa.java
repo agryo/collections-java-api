@@ -39,6 +39,8 @@ public class OrdenacaoPessoa {
          * A segunda linha do método usa o método "sort()" da classe "Collections" do Java para ordenar a lista "pessoasPorAltura".
          * O método "sort()" usa o comparador "ComparetorPorAltura" (que foi criado na classe Pessoa) para comparar os elementos 
          * da lista. O comparador "ComparetorPorAltura" compara os elementos da lista com base em suas alturas.
+         * O primeiro argumento, "pessoasPorAltura", é a lista que será ordenada. 
+         * O segundo argumento, "new ComparetorPorAltura()", é o comparador que será usado para comparar os elementos da lista.
          */
         Collections.sort(pessoasPorAltura, new ComparetorPorAltura());
         //Após terminar a ordenação, ele retorna a lista nova "pessoasPorAltura".
