@@ -19,5 +19,30 @@ public class Main {
         System.out.println("Produto mais caro: " + estoque.obterProdutoMaisCaro());
         System.out.println("Produto mais barato " + estoque.obterProdutoMaisBarato());
         System.out.println("Produto com maior quantidade em valor no estoque: " + estoque.obterProdutoMaiorQuantidadeValorTotalNoEstoque());
+
+        System.out.println("\n\nSegundo desafio testes...");
+        ContagemPalavras contagemPalavras = new ContagemPalavras();
+        contagemPalavras.removerPalavra("Palavra 1");
+        contagemPalavras.adicionarPalavra("Palavra 5");
+        contagemPalavras.adicionarPalavra("Palavra 3");
+        contagemPalavras.adicionarPalavra("Palavra 1");
+        contagemPalavras.adicionarPalavra("Palavra 2");
+        contagemPalavras.adicionarPalavra("Palavra 1");
+        contagemPalavras.adicionarPalavra("Palavra 5");
+        contagemPalavras.adicionarPalavra("Palavra 3");
+        contagemPalavras.adicionarPalavra("Palavra 1");
+        contagemPalavras.adicionarPalavra("Palavra 3");
+        contagemPalavras.adicionarPalavra("Palavra 3");
+        contagemPalavras.adicionarPalavra("Palavra 4");
+        contagemPalavras.adicionarPalavra("Palavra 3");
+        contagemPalavras.adicionarPalavra("Palavra 1");
+        contagemPalavras.adicionarPalavra("Palavra 4");
+        contagemPalavras.adicionarPalavra("Palavra 1");
+        System.out.println("Existem " + contagemPalavras.exibirContagemPalavras() + " palavras.");
+
+        contagemPalavras.removerPalavra("Palavra 4");
+        System.out.println("Existem " + contagemPalavras.exibirContagemPalavras() + " palavras.");
+
+        contagemPalavras.encontrarPalavraMaisFrequente();
     }
 }
