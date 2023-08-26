@@ -4,6 +4,9 @@ public class Main {
     public static void main(String[] args) {
         EstoqueProdutos estoque = new EstoqueProdutos();
         estoque.exibirProdutos();
+        estoque.obterProdutoMaisCaro();
+        estoque.obterProdutoMaisBarato();
+        estoque.obterProdutoMaiorQuantidadeValorTotalNoEstoque();
 
         estoque.adicionarProduto(1L, "Produto A", 1, 50.0);
         estoque.adicionarProduto(2L, "Produto B", 5, 11.0);
@@ -14,6 +17,7 @@ public class Main {
 
         System.out.println("Valor total do estoque: R$" + estoque.calcularValorTotalEstoque());
         System.out.println("Produto mais caro: " + estoque.obterProdutoMaisCaro());
-        //System.out.println("Produto com maior quantidade em valor no estoque: " + estoque.obterProdutoMaiorQuantidadeValorTotalNoEstoque());
+        System.out.println("Produto mais barato " + estoque.obterProdutoMaisBarato());
+        System.out.println("Produto com maior quantidade em valor no estoque: " + estoque.obterProdutoMaiorQuantidadeValorTotalNoEstoque());
     }
 }

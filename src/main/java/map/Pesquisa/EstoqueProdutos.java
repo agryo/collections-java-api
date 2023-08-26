@@ -51,4 +51,39 @@ public class EstoqueProdutos {
         }
         return produtoMaisCaro;
     }
+
+    //Método para encontrar o produto mais barato
+    public Produto obterProdutoMaisBarato() {
+        Produto produtoMaisBarato = null;
+        double menorPreco = Double.MAX_VALUE;
+        if (!estoqueProdutosMap.isEmpty()) {
+            for (Produto produto : estoqueProdutosMap.values()) {
+                if (produto.getPreco() < menorPreco) {
+                    produtoMaisBarato = produto;
+                    menorPreco = produto.getPreco();                    
+                }
+            }
+        } else {
+            System.out.println("O estoque está vazio!");
+        }
+        return produtoMaisBarato;
+    }
+
+    //Método para obter o produto com maior estoque, considerando a quantidade e o preço
+    public Produto obterProdutoMaiorQuantidadeValorTotalNoEstoque() {
+        Produto produtoMaiorQuantidadeValorTotal = null;
+        double maiorProdutoEncontrado = 0d;
+        if (!estoqueProdutosMap.isEmpty()) {
+            for (Map.Entry<Long, Produto> entry : estoqueProdutosMap.entrySet()) {
+                double valorProdutoEstoque = entry.getValue().getPreco() * entry.getValue().getQuantidade();
+                if (valorProdutoEstoque > maiorProdutoEncontrado) {
+                    maiorProdutoEncontrado = valorProdutoEstoque;
+                    produtoMaiorQuantidadeValorTotal = entry.getValue();
+                }
+            }
+        } else {
+            System.out.println("O estoque está vazio!");
+        }
+        return produtoMaiorQuantidadeValorTotal;
+    }
 }
